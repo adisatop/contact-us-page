@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>page title</title>
+    <style>
+        form,
+        #error {
+            direction: rtl;
+            margin: auto;
+            width: 20%;
+            padding: 10px;
+        }
+        
+        #error {
+            border: 10px;
+            border-style: solid;
+            display: none;
+        }
+    </style>
+</head>
+<script src="validator.js"></script>
+
+<body>
+    <form name="myForm" onsubmit="return checkIfFormIsValid()" action="form-success.html">
+        <table>
+            <tr>
+                <td>שם מלא:</td>
+                <td>
+                    <input type="text" name="full name" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td>גיל:</td>
+                <td><input type="number" name="age" size="25"></td>
+            </tr>
+            <tr>
+                <td>טלפון:</td>
+                <td><input type="text" name="phone" size="25"></td>
+            </tr>
+
+            </tr>
+            <tr>
+                <td>סיבת פניה:</td>
+                <td><select name="cars">
+  <option value="guide"></option>
+  <option value="guide">הפעלת מכשיר</option>
+  <option value="technical-help">עזרה טכנית</option>
+  <option value="explain">הסבר טכני</option>
+  </select>
+                </td>
+            </tr>
+            <tr>
+                <td>נושא הפניה:</td>
+                <td>
+                    <textarea name="contact-subject" rows="4" cols="50"></textarea>
+                </td>
+                </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="שלח טופס" name="b1"></td>
+                <td>
+                    <input type="reset" value="reset">
+                </td>
+                </select>
+                </td>
+            </tr>
+        </table>
+        <p>
+    </form>
+    <div id="error"></div>
+</body>
+
+</html>
